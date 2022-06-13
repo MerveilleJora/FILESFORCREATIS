@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8" />
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="Stylesheet" />
+    <link href="StyleJS.css" rel="Stylesheet" />
+</head>
+
+<body style="background-image: url(images/F9.jpg); background-size: cover; background-attachment: fixed;">
+    <section id="navigation">
+        <nav>
+            <div class="boutonav">
+                <a href="https://www.linkedin.com/in/jora-merveille-omva-3863a7222/" target="_blank"><input type="button" value="Linkedin" name="Linkedin" class="button" /></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScbGNA8gUHaj48xKDvDQ8fdR2VkA3BM70pk2NififLSFVhH8w/viewform?usp=sf_link" target="_blank">
+                    <a href="index.html"><input type="button" value="Accueil" name="Accueil" class="button" /></a>
+                    <a href="https://github.com/MerveilleJora" target="_blank"><input type="button" value="Github" name="Github" class="button" /></a>
+                    <input type="button" value="Contact" name="Contact" class="button" />
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <article>
+        <section class="Part-JS">
+            <h1 style="background-color: rgb(255, 230, 0); margin-top: 0; border-radius: 2rem 2rem 0 0;">Depuis le début</h1>
+            <div class="content-JS">
+
+
+            </div>
+        </section>
+        <section class="Part-JS">
+            <h1 style="background-color: rgb(255, 230, 0); margin-top: 0; border-radius: 2rem 2rem 0 0;">Projets Random</h1>
+            <div class="content-JS">
+                <h2 style="text-align: center; color: rgb(255, 230, 0); width: 100%;">Faire une To-Do-List</h2><br><br>
+                <br>
+                <div class="box">
+                    <div class="input">
+                        <input type="text" placeholder="Add Task" value="" id="input" />
+                        <button onclick="add()" onkeypress="add()">ADD</button>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <ul class="items">
+                    </ul>
+                </div>
+                <nav style="display: flex; justify-content: space-around;">
+                    <a href="Javascript.html"><input value="Réinitialiser" style="background-color: darkgoldenrod; color: white; text-align: center; border-radius: 2px; width: 10rem; margin: auto; margin-top: 1.5rem; cursor: pointer;"></a>
+                    <a href="https://github.com/MerveilleJora/TO-DO-list"><input value="voir le code" style="background-color: darkgoldenrod; color: white; text-align: center; border-radius: 2px; width: 10rem; margin: auto; margin-top: 1.5rem; cursor: pointer;"></a>
+                </nav>
+            </div>
+        </section>
+    </article>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

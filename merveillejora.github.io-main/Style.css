@@ -1,0 +1,796 @@
+/*ajout de polices*/
+
+* {
+    transition: 0.5s;
+}
+
+@font-face {
+    font-family: 0;
+    src: url();
+}
+
+
+/*document entier*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodynuit {
+    background-color: rgb(36, 25, 75);
+}
+
+.bodytechno {
+    background-color: rgb(17, 34, 88);
+}
+
+
+/*thmes*/
+
+.M {
+    position: fixed;
+    top: 5rem;
+    left: 2rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: 5;
+    filter: drop-shadow(0 0 0.20rem rgba(1, 35, 87, 0.842));
+    transition: .5s;
+}
+
+.theme {
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 3px;
+    transition: .5s;
+}
+
+#clair {
+    background-color: white;
+    background-color: rgb(28, 94, 148);
+}
+
+#nuit {
+    background-image: url("images/nuit.jpg");
+    background-size: cover;
+    border-color: rgb(17, 22, 19);
+}
+
+#techno {
+    background-image: url("images/fond4.jpg");
+    background-size: cover;
+    border-color: rgb(36, 25, 75);
+}
+
+
+/*entête*/
+
+#navigation {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: ghostwhite;
+    width: 100%;
+    height: 4rem;
+}
+
+header {
+    background-color: rgb(28, 94, 148);
+    top: 0;
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+    transition: initial;
+}
+
+.headernuit {
+    background-image: url("images/nuit.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.headertechno {
+    background-image: url("images/fond4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#Aproposid {
+    width: 60rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.boutonav {
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    width: max-content;
+    border: black;
+    color: blanchedalmond;
+}
+
+.button {
+    cursor: pointer;
+}
+
+
+/*contenu*/
+
+main {
+    width: 90%;
+    position: relative;
+    top: 2rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    filter: drop-shadow(0 0 0.20rem rgba(20, 21, 22, 0.842));
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog {
+    position: relative;
+    top: 1.5rem;
+    background-color: rgb(28, 94, 148);
+    width: 60%;
+    height: max-content;
+    margin-bottom: 5rem;
+}
+
+#CV {
+    width: 35%;
+}
+
+.blognuit {
+    background-image: url('images/nuit.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blogtechno {
+    background-image: url('images/fond4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    background-color: rgb(28, 94, 148);
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    cursor: pointer;
+}
+
+.h1nuit {
+    background-image: url('images/nuit.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.h1techno {
+    background-image: url('images/fond4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Part {
+    display: none;
+    position: relative;
+    transition: .5s;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+
+/*ajout js*/
+
+.show {
+    display: initial;
+    transition: .5s;
+}
+
+.content {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: rgb(13, 13, 15);
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.paragraphe1 {
+    position: relative;
+    color: black;
+    width: 30rem;
+}
+
+.paragraphe1nuit {
+    color: white;
+}
+
+.paragraphe1techno {
+    color: white;
+}
+
+.paragraphe2 {
+    position: relative;
+    width: 90%;
+    height: max-content;
+    margin: auto;
+    color: red;
+    text-align: center;
+}
+
+.langage {
+    color: black;
+    text-align: center;
+}
+
+.span {
+    width: 20%;
+}
+
+.content-langage {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+}
+
+.content-barP1 {
+    position: relative;
+    width: 70%;
+    height: 2rem;
+    background-color: rgb(198, 198, 211);
+    border-radius: 1rem;
+}
+
+.progress1 {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 110, 79);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.progress2 {
+    color: rgb(255, 255, 255);
+    width: 70%;
+    height: 100%;
+    background-color: rgb(146, 120, 5);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.progress3 {
+    color: rgb(255, 255, 255);
+    width: 30%;
+    height: 100%;
+    background-color: rgb(146, 45, 5);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.liste1 {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.profil {
+    background-image: url("images/profil.jpeg");
+    background-size: 26rem;
+    background-position-x: center;
+    background-position-y: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+}
+
+.img-Lo {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    margin: auto;
+}
+
+.imgCertif {
+    width: 100%;
+    height: 100%;
+}
+
+.imgLo {
+    width: 4%;
+    height: 4%;
+}
+
+.imglogo {
+    width: 22%;
+}
+
+.imgCertif {
+    width: 100%;
+}
+
+#certif {
+    background-color: rgb(255, 255, 255);
+}
+
+.certif-elements {
+    width: 100%;
+    margin: auto;
+}
+
+.typecertif {
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    ;
+}
+
+.C {
+    width: 12rem;
+    height: max-content;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 0.100rem rgba(1, 35, 87, 0.842));
+}
+
+footer {
+    position: relative;
+    top: 0;
+    padding: .5rem;
+    height: 5rem;
+    background-color: rgb(220, 220, 220);
+}
+
+
+/*Le portefolio*/
+
+h2 {
+    position: absolute;
+    z-index: 2;
+    width: 25rem;
+    text-transform: uppercase;
+    font-size: large;
+    text-align: center;
+}
+
+.fini {
+    background-color: turquoise;
+    width: 15rem;
+}
+
+.encours {
+    background-color: sandybrown;
+    width: 15rem;
+}
+
+.projet {
+    width: 15rem;
+    height: 17rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.projetini {
+    background-color: white;
+    filter: drop-shadow(0 0 0.30rem rgba(1, 35, 87, 0.842));
+}
+
+.projetnuit {
+    background-color: rgb(31, 4, 42);
+    filter: drop-shadow(0 0 0.30rem rgba(211, 211, 211, 0.842));
+}
+
+.content-projets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cesi {
+    z-index: 2;
+    position: fixed;
+    width: 6rem;
+    right: 1rem;
+    top: 0;
+    margin-top: 2rem;
+    filter: drop-shadow(0 0 0.40rem rgba(1, 35, 87, 0.842));
+}
+
+.imgSB {
+    width: 15rem;
+    height: 10rem;
+}
+
+.imglang {
+    position: relative;
+    width: max-content;
+    margin: auto;
+}
+
+
+/*Blog.html*/
+
+
+/*Blog*/
+
+#contenu-blog {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+    border-radius: 30px;
+}
+
+.category {
+    filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+    width: 25%;
+    height: max-content;
+    margin: auto;
+    cursor: pointer;
+}
+
+h4.titreblog {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    height: 1.5rem;
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    width: 45%;
+    font-size: 60%;
+}
+
+.imgblog {
+    width: 100%;
+    height: 5%;
+}
+
+article {
+    position: relative;
+    top: 5rem;
+    width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Part-JS {
+    border-radius: 2rem;
+    width: 38rem;
+    height: 40rem;
+    background-color: rgba(255, 255, 255, 0.52);
+    filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+    margin-bottom: 5rem;
+}
+
+.content-JS {
+    background-color: white;
+    width: 98%;
+    margin: auto;
+    height: max-content;
+    padding-bottom: 1rem;
+}
+
+ @media screen and (min-width: 800px) and (max-width: 1024px) {
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .5s;
+    }
+    .M {
+        position: fixed;
+        top: 5rem;
+        left: 2rem;
+        width: 5rem;
+        height: 5rem;
+        z-index: 5;
+        filter: drop-shadow(0 0 0.20rem rgba(1, 35, 87, 0.842));
+        transition: .5s;
+    }
+    .theme {
+        margin: auto;
+        margin-bottom: 1rem;
+        height: 40%;
+        width: 40%;
+        border-radius: 30px;
+        cursor: pointer;
+        border: solid 3px;
+        transition: .5s;
+    }
+    header {
+        background-color: rgb(28, 94, 148);
+        top: 0;
+        width: 100%;
+        padding: 7% 0 5% 0;
+        transition: initial;
+    }
+    #Aproposid {
+        text-align: end;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: max-content;
+    }
+    .profil {
+        background-image: url("images/profil.jpeg");
+        background-size: 22rem;
+        background-position-x: center;
+        background-position-y: center;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 100%;
+        margin: 7%;
+    }
+    main {
+        width: 100%;
+        position: relative;
+        top: 2rem;
+        margin: auto;
+        margin-bottom: 5rem;
+        filter: drop-shadow(0 0 0.20rem rgba(20, 21, 22, 0.842));
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog {
+        position: relative;
+        top: 1.5rem;
+        background-color: rgb(28, 94, 148);
+        width: 55%;
+        height: max-content;
+        margin-bottom: 5rem;
+    }
+    #CV {
+        width: 42%;
+    }
+    .content {
+        background-color: white;
+        width: 100%;
+    }
+    .C {
+        width: 40%;
+        height: max-content;
+        margin-bottom: 1rem;
+        filter: drop-shadow(0 0 0.100rem rgba(1, 35, 87, 0.842));
+    }
+    .cesi {
+        z-index: 2;
+        position: fixed;
+        width: 4rem;
+        right: 1rem;
+        top: 0;
+        margin-top: 2rem;
+        filter: drop-shadow(0 0 0.40rem rgba(1, 35, 87, 0.842));
+    }
+    .imgSB {
+        width: 12rem;
+        height: 7rem;
+    }
+    .projet {
+        width: 12rem;
+        height: 14em;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .fini {
+        background-color: turquoise;
+        width: 12rem;
+    }
+    .encours {
+        background-color: sandybrown;
+        width: 12rem;
+    }
+    /*Blog*/
+    #contenu-blog {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        height: 80%;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+        border-radius: 30px;
+    }
+    .category {
+        filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+        width: 40%;
+        height: max-content;
+        margin: auto;
+        cursor: pointer;
+    }
+    h4.titreblog {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        height: 1.5rem;
+        position: relative;
+        margin-bottom: 0;
+        text-align: center;
+        width: 50%;
+        font-size: 60%;
+    }
+    .imgblog {
+        width: 100%;
+        height: 5%;
+    }
+}
+
+ @media screen and (max-width: 799px) {
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .5s;
+    }
+     
+     .content{
+         width: 100%;
+     }
+    .M {
+        position: absolute;
+        top: 5rem;
+        left: 2rem;
+        width: 5rem;
+        height: 5rem;
+        z-index: 5;
+        filter: drop-shadow(0 0 0.20rem rgba(1, 35, 87, 0.842));
+        transition: .5s;
+    }
+    .theme {
+        margin: auto;
+        margin-bottom: 1rem;
+        height: 40%;
+        width: 60%;
+        border-radius: 30px;
+        cursor: pointer;
+        border: solid 3px;
+        transition: .5s;
+    }
+    header {
+        background-color: rgb(28, 94, 148);
+        top: 0;
+        width: 100%;
+        padding: 20% 0 5% 0;
+        transition: initial;
+    }
+    #Aproposid {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        display: block;
+        align-items: center;
+        position: relative;
+        height: max-content;
+    }
+    .paragraphe1 {
+        position: relative;
+        font-size: small;
+        width: 100%;
+    }
+    .profil {
+        background-image: url("images/profil.jpeg");
+        background-size: 14rem;
+        background-position-x: center;
+        background-position-y: center;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        margin: auto;
+    }
+    main {
+        width: 98%;
+        position: relative;
+        top: 2rem;
+        margin: auto;
+        margin-bottom: 5rem;
+        filter: drop-shadow(0 0 0.20rem rgba(20, 21, 22, 0.842));
+        display: block;
+    }
+    .blog {
+        position: relative;
+        top: 1rem;
+        background-color: rgb(28, 94, 148);
+        width: 100%;
+        height: max-content;
+        margin-bottom: 5rem;
+    }
+    #CV {
+        width: 100%;
+    }
+    .imgscreen {
+        width: 2rem;
+    }
+    /*Blog*/
+    #contenu-blog {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        height: 80%;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+        border-radius: 30px;
+    }
+    .category {
+        filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.842));
+        width: 80%;
+        height: max-content;
+        margin: auto;
+        cursor: pointer;
+    }
+    h4.titreblog {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        height: 1.5rem;
+        position: relative;
+        margin-bottom: 0;
+        text-align: center;
+        width: 45%;
+        font-size: 60%;
+    }
+    .imgblog {
+        width: 100%;
+        height: 5%;
+    }
+}
