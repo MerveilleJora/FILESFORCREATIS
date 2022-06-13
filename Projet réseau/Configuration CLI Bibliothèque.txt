@@ -1,0 +1,126 @@
+********************************************************************************
+****                    Note commande projet                                ****
+****                    Commande CLi bibliothèque                           ****
+********************************************************************************
+
+
+***********  Configuration SSH et sécurisation physique ************************
+*SSH
+Router>enable
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname R_Biblio
+R_Biblio(config)#enable secret 1234-Biblio:1234
+R_Biblio(config)#ip ssh version 2
+Please create RSA keys (of at least 768 bits size) to enable SSH v2.
+R_Biblio(config)#ip domain-name Exia.com
+R_Biblio(config)#username admin secret 1234-Biblio:1234
+R_Biblio(config)#crypto key generate rsa
+The name for the keys will be: R_Biblio.Exia.com
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+
+R_Biblio(config)#line console 0
+*Mar 1 0:15:8.618: %SSH-5-ENABLED: SSH 2 has been enabled
+R_Biblio(config-line)#password 1234-Biblio:1234
+R_Biblio(config-line)#login
+R_Biblio(config-line)#exit
+	
+R_Biblio(config)#line vty 0 15
+R_Biblio(config-line)#transport input ssh
+R_Biblio(config-line)#login local
+R_Biblio(config-line)#exit
+R_Biblio(config)#service password-encryption
+R_Biblio(config)#banner motd #Acces aux Personnes 
+Enter TEXT message.  End with the character '#'.
+Autorisees Seulement !#
+
+R_Biblio(config)#exit
+R_Biblio#
+%SYS-5-CONFIG_I: Configured from console by console
+
+R_Biblio#copy running-config star
+R_Biblio#copy running-config startup-config 
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+R_Biblio#
+
+*********************** IP et Service DHCP Routeur *****************************
+R_Biblio>ena
+R_Biblio#configure terminal
+R_Biblio(config)# int f0/0
+R_Biblio(config-if)# ip address 192.168.0.254 255.255.255.0
+R_Biblio(config)#ip dhcp pool CLIENT_LAN
+R_Biblio(dhcp-config)#network 192.168.0.0 255.255.255.240
+R_Biblio(dhcp-config)#dns-server 8.8.8.8
+R_Biblio(dhcp-config)#default-router 192.168.0.254
+ip dhcp excluded-address 192.168.0.0 192.168.0.255 198.168.0.254
+
+************************** SSH et SP - Switch **********************************
+
+
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname RT-PCs
+RT-PCs(config)#interface vlan 100
+RT-PCs(config-if)#ip address 192.168.0.100 255.255.255.0
+RT-PCs(config-if)#no shutdown
+RT-PCs(config-if)#exit
+RT-PCs(config)#ip default-gateway 192.168.0.254	
+RT-PCs(config)#exit
+RT-PCs#
+%SYS-5-CONFIG_I: Configured from console by console
+
+RT-PCs#copy running-config star
+RT-PCs#copy running-config startup-config 
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+RT-PCs#show ip ssh
+SSH Disabled - version 1.99
+%Please create RSA keys (of atleast 768 bits size) to enable SSH v2.
+Authentication timeout: 120 secs; Authentication retries: 3
+RT-PCs#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RT-PCs(config)#enable secret 1234-Biblio:1234
+RT-PCs(config)#ip domain-name Exia.com
+RT-PCs(config)#ip ssh version 2
+Please create RSA keys (of at least 768 bits size) to enable SSH v2.
+RT-PCs(config)#crypto key generate rsa
+The name for the keys will be: RT-PCs.Exia.com
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+
+RT-PCs(config)#username admin secret 1234-Biblio:1234
+*Mar 1 0:46:3.407: %SSH-5-ENABLED: SSH 2 has been enabled
+RT-PCs(config)#line vty 0 15
+RT-PCs(config-line)#transport input ssh
+RT-PCs(config-line)#login local
+RT-PCs(config-line)#exit
+RT-PCs(config)#exit
+RT-PCs#
+%SYS-5-CONFIG_I: Configured from console by console
+
+RT-PCs#copy running-config star
+RT-PCs#copy running-config startup-config 
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+RT-PCs#
+
+*************************     Borne Wifi     ***********************************
+- SSid->AP_Bibliotheque 
+- adressage dynamique par le routeur 
+- ajout du SSid dans les laptops
+
+*************************      Accès à internet       **************************
