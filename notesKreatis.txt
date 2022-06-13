@@ -1,0 +1,30 @@
+#############Notes relatives au fichier file.cpp########################
+
+Après avoir corrigé la syntaxe sur Qt, il m'a semblé mieux de tout mettre en c++ pour mieux comprendre. 
+J'ai donc dû pour les fonctions comme isUpper() ou isLetter() créer une fonction équivalente. 
+
+J'ai également utilisé substr() comme vous m'aviez conseillée à la place de mid(). 
+
+
+Selon moi, pour les chaînes comme CCC[]CC, CCC[ et CCCC le code renvoie une erreur ca il n'y a pas de "else" prennant 
+en compte la possiblité d'absence de char dans les crochets ou encore l'absence des crochets eux-mêmes. 
+En faisant le code en c++ je n'ai pas connu ce type d'érreur. 
+
+Ensuite, la fonction devrait renvoyer un booléen. Cependant, la celle contient en elle-même 2 fonctions 
+qui renvoie elles-mêmes un booléen. Dans mon code, j'ai choisi de déclarer une variable globale qui changerait ou 
+alors au début de la fonction qui changerait en fonction des résultats et qui serait retournée à la fin de la fonction. 
+True ou false du contenu de la chaîne. 
+
+Après test, la fonction fonctionne bien avec tous les cas sauf F[B-](F)(F)F qui lui renvoie false. 
+
+
+
+
+
+Autre commentaire:
+
+Si je devais ajouter un commentaire aux notes que je vous présente aujourd'hui, notamment en POO, 
+Je dirai que j'ai eu énormément de difficultés. Et cela se ressent, j'ai pensé à abandonner. Mais aujourd'hui 
+je peux vous dire que je me suis éfforcée à maîtriser les bases quitte à repasser sur ce que j'avais fait.
+
+Merci.
