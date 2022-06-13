@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-image: url("../Images/flag.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    transition: .3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#ML {
+    position: relative;
+    top: 200px;
+    height: max-content;
+    width: 40rem;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.792);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+h2 {
+    color: #1e5079;
+}
+
+.blue {
+    color: #1e5079;
+}
+
+h3 {
+    color: #dbbb5c;
+}
+
+@media screen AND (max-width:800px) {
+    #ML {
+        width: 90%;
+        font-size: large;
+    }
+}

@@ -1,0 +1,243 @@
+* {
+    transition: .3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.candi {
+    position: relative;
+    /*Permet de  deplacer tous les élément du block*/
+    border: 3px rgb(223, 196, 76);
+    width: 132px;
+    /*Toute la largeure de la page*/
+    color: white;
+    background-color: rgb(68, 128, 196);
+    font-weight: bold;
+    /*Tous les écrits en gras*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*La police */
+    border: 3px rgba(35, 97, 168, 0.74) solid;
+    filter: drop-shadow(0 0 0.50rem rgb(210, 151, 0));
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.50rem rgb(210, 151, 0));
+}
+
+.width-4rem {
+    width: 6rem;
+}
+
+
+/*Equipe*/
+
+.titreJaune {
+    background-color: rgb(223, 196, 76);
+    text-align: center;
+}
+
+.titreJauneC {
+    color: rgb(223, 196, 76);
+    text-align: center;
+}
+
+#bodyE {
+    background-color: rgba(2, 18, 63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.logo {
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px;
+    border-color: rgb(223, 196, 76);
+    filter: drop-shadow(0 0 0.10rem rgba(1, 35, 87, 0.842));
+}
+
+.logo:hover {
+    filter: invert(1);
+}
+
+.ecole {
+    position: relative;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 35rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*La police */
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: 3px rgb(10, 58, 190) solid;
+    color: white;
+    background-color: rgba(29, 69, 180, 0.788);
+}
+
+footer {
+    background-image: url("../Images/FB5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    /*Toute la largeure de la page*/
+    height: 70px;
+    /*Toute la hauteure de la page*/
+    margin: 0%;
+    /*Pas de marge exterieure*/
+    bottom: 0%;
+    border-top: 2px rgb(0, 79, 182) solid;
+    background-color: rgb(255, 255, 255);
+    opacity: 100%;
+    font-weight: bold;
+    /*Tous les écrits en gras*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*La police */
+    color: rgb(3, 3, 99);
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+#Eqp {
+    position: relative;
+    top: 100px;
+    bottom: 200px;
+    height: max-content;
+    width: 40rem;
+    margin: auto;
+}
+
+#ML {
+    position: relative;
+    top: 100px;
+    bottom: 200px;
+    height: max-content;
+    width: 40rem;
+    margin: auto;
+}
+
+.fonction {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    height: 4rem;
+    overflow-y: scroll;
+    border: #14503c 3px solid;
+    border-radius: 10px;
+}
+
+.direction-content {
+    /*background-image: url("../Images/EQP4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: #1E5079;
+    background-attachment: fixed;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.H2-direction {
+    background-color: rgb(223, 196, 76);
+    text-align: center;
+    margin: auto;
+}
+
+.SC {
+    margin-top: 20px;
+    position: relative;
+    width: min-content;
+}
+
+.imgft {
+    position: relative;
+    border-radius: 50%;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.CD {
+    margin-top: 20px;
+    margin-left: 1px;
+    margin-right: 1px;
+    position: relative;
+    width: min-content;
+}
+
+#Eqp {
+    margin-bottom: 10rem;
+    background-color: rgba(240, 248, 255, 0.698);
+    border-radius: 10px;
+}
+
+#bodyeqp {
+    background-image: url("../Images/gestimg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/*Formation*/
+
+#mainform {
+    height: max-content;
+    margin-bottom: 2rem;
+    background-color: rgba(240, 248, 255, 0.417);
+    border-radius: 10px;
+    border: solid 3px;
+}
+
+#bodyform {
+    background-image: url("../Images/diplo3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.Lvlformations {
+    color: white;
+    width: 20rem;
+    height: max-content;
+    background-color: #14503c;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 799px) {
+    main {
+        width: 98%;
+        margin: auto;
+        margin-top: 10rem;
+    }
+    .Lvlformations {
+        padding: .5rem;
+    }
+    #Eqp {
+        width: 98%;
+        margin-bottom: 10rem;
+    }
+}

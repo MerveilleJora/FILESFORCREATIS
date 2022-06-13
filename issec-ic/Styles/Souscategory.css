@@ -1,0 +1,197 @@
+/*Candidature*/
+
+* {
+    transition: .3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bodycandi {
+    background-color: #061a13;
+    background-image: url("../Images/Loc1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+input {
+    border-radius: 5px;
+    background-color: rgb(223, 196, 76);
+    border: rgba(35, 97, 168, 0.74) 2px;
+}
+
+.area {
+    width: 80%;
+    height: 8rem;
+    background-color: #1E5079;
+    color: aliceblue;
+    padding: .5rem;
+}
+
+.select {
+    background-color: #1E5079;
+    border: 2px solid;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.bluecolor {
+    color: #1E5079;
+}
+
+.ycolor {
+    color: rgb(223, 196, 76);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+em {
+    color: red;
+}
+
+#Cantitre {
+    position: relative;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.ct1 {
+    font-size: xx-large;
+}
+
+.ct2 {
+    font-size: larger;
+}
+
+#consignes {
+    width: 40%;
+    text-align: center;
+    font-size: small;
+    background-color: #1E5079;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.lbl {
+    width: 100px;
+    background-color: #1E5079;
+}
+
+#formulaire {
+    background-color: rgba(255, 255, 255, 0.597);
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: 10px;
+    padding: 1px 1px 2px 2px;
+    border: rgb(223, 196, 76) 3px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+/*#scoafter {
+    display: none;
+}
+
+#scoafter0 {
+    display: none;
+}
+
+#scoafter2 {
+    display: none;
+}
+
+#scoafter3 {
+    display: none;
+}*/
+
+.formations {
+    display: none;
+}
+
+.displayinitial {
+    display: block;
+}
+
+.retourac {
+    position: relative;
+    /*Permet de  deplacer tous les élément du block*/
+    border: 3px rgba(35, 97, 168, 0.74) solid;
+    width: 165px;
+    /*Toute la largeure de la page*/
+    font-weight: bold;
+    /*Tous les écrits en gras*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*La police */
+    background-color: rgb(68, 128, 196);
+    color: white;
+    cursor: pointer;
+}
+
+.retourac:hover {
+    background-color: moccasin;
+}
+
+#nav {
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+}
+
+.ipt {
+    cursor: pointer;
+    width: 6rem;
+    text-align: center;
+    font-size: small;
+    background-color: #1E5079;
+    color: aliceblue;
+    border: white 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.ipt:hover {
+    width: 7rem;
+}
+
+.ipt:active {
+    background-color: #DBBB5C;
+}
+
+.width-4rem {
+    width: 6rem;
+    height: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen AND (max-width:800px) {
+    #Cantitre {
+        width: 100%;
+        position: relative;
+        margin-top: 10rem;
+        text-align: center;
+    }
+    #consignes {
+        width: 80%;
+        font-size: x-large;
+    }
+    #formulaire {
+        width: 90%;
+        font-size: larger;
+    }
+}
